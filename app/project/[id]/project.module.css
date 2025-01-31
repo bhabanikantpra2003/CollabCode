@@ -1,0 +1,31 @@
+.projBody{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #000814;
+    padding-top: 130px;
+}
+
+.ruler{
+    left: 0;
+    right: 0;
+    border: 2px solid #F0F0F0;
+}
+
+.projContent{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.workspace{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    gap: 5px;
+}

@@ -1,0 +1,21 @@
+.newfile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.newfileInp input{
+    flex-shrink: 1;
+    flex-grow: 1;
+    background: transparent;
+    width: 180px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.newfileInp input:focus,
+.newfileInp input:active {
+    outline: none;
+}

@@ -1,0 +1,80 @@
+.contentWrapper{
+    min-height: 100vh;
+    background: #0A0909;
+    padding-top: 200px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mainContent span{
+    font-size: 64px;
+    font-family: 'Roboto Mono', monospace;
+    color: #F0F0F0;
+    text-align: center ;
+    margin-bottom: 20px;
+    max-width: auto;
+}
+
+.mainButton {
+    width:195px;
+    height: 75px;
+    border-radius: 18px;
+    margin-top: 58px;
+    background-color: #F0F0F0;
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    transition: 0.3s all ease-in-out;
+}
+
+.mainButton:hover {
+    background-color: #b9b8b8;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 0px #ecdfdf;
+}
+
+.diff{
+    background: linear-gradient(to right, #f05800, #00c9fc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+@media screen and (max-width: 800px){
+
+    .contentWrapper{
+        padding-top: 100px;
+    }
+    
+    .mainContent{
+        width: 100%;
+    }
+
+    .mainContent span{
+        font-size: 40px;
+        max-width: 300px;
+    }
+    .mainButton{
+        width: 100%;
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        font-size: 20px;
+    }
+}

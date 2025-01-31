@@ -1,0 +1,47 @@
+.folders{
+    width: 350px;
+    border-right: 2px solid #F0F0F0;
+    resize: horizontal;
+    height: calc(100vh - 132px);
+    overflow-y: auto;
+    color: #F0F0F0;
+    padding: 10px;
+}
+
+.names{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.openIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.files, .activeFile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.file{
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 180px;
+}
+
+.activeFile{
+    background-color: #525252;
+    border-radius: 12px;
+}

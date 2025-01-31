@@ -1,0 +1,26 @@
+.terminal{
+    background-color: #000;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid #fff;
+    border-top: 3px solid #fff;
+    overflow:auto;
+    resize: both;
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    margin-left: -10px;
+}
+
+.welc{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 700;
+    margin-left: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,69 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+// datasource db {
+//  provider = "postgresql"
+//  url = env("DATABASE_URL")
+// }
+
+model User {
+  id       String      @id @default(uuid())
+  email    String   @unique
+  name     String?
+  image    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  projects Projects[]
+  participants Participants[]
+}
+
+model Projects{
+  id       String      @id @default(uuid())
+  name     String
+  user     User        @relation(fields: [userId], references: [id])
+  userId   String
+  shareId  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  files    Files[]
+  participants Participants[]
+}
+
+model Files{
+  id      String      @id @default(uuid())
+  name    String
+  language String
+  project Projects    @relation(fields: [projectId], references: [id])
+  projectId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  code Codes?
+}
+
+model Codes{
+  id       String      @id @default(uuid())
+  code     String? @db.Text
+  file     Files       @relation(fields: [fileId], references: [id])
+  fileId   String  @unique 
+}
+
+model Participants{
+  user     User        @relation(fields: [userId], references: [id])
+  userId   String
+  project  Projects    @relation(fields: [projectId], references: [id])
+  projectId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@id([userId, projectId])
+}

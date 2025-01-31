@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Single+Day&display=swap');
+
+.dashBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-top: 250px;
+}
+
+.dashTitle{
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.createBtn{
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hr{
+    width: 90%;
+    height: 6px;
+    border-radius: 2px;
+    background-color: #fff;
+    margin: 40px 10px;
+}
+
+.overlay {
+    display: "${(props) => (props.show ? 'block' : 'none')}";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px); 
+    z-index: 1; 
+}

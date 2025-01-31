@@ -1,0 +1,22 @@
+.menub{
+    color: #F0F0F0;
+    font-size: 20px;
+}
+
+.text{
+    color: #F0F0F0;
+    font-family: 'Truculenta', sans-serif;
+}
+
+.btn{
+    color: #F0F0F0;
+    text-align: center;
+}
+
+.btn:disabled{
+    color:#b2b1b1
+}
+
+.inpt{
+    font-family: 'Lucida Sans', sans-serif;
+}

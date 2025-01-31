@@ -1,0 +1,44 @@
+{
+  "name": "codev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate && prisma migrate deploy"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@monaco-editor/react": "^4.6.0",
+    "@prisma/client": "^5.10.2",
+    "@reduxjs/toolkit": "^2.2.1",
+    "@upstash/redis": "^1.31.5",
+    "framer-motion": "^11.0.6",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.379.0",
+    "nanoid": "^5.0.6",
+    "next": "14.1.0",
+    "next-auth": "^4.24.6",
+    "next-client-cookies": "^1.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-redux": "^9.1.0",
+    "react-type-animation": "^3.2.0",
+    "redis": "^4.6.13",
+    "socket.io-client": "^4.7.5"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "prisma": "^5.10.2",
+    "typescript": "^5"
+  }
+}

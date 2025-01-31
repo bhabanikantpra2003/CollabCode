@@ -1,0 +1,65 @@
+.projnew{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.closeIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-items: right;
+    margin: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #F0F0F0;
+}
+
+.projmain{
+    background: rgba(36, 44, 54, 0.85);
+    width: 550px;
+    border-radius: 13px;
+}
+
+.projnewContent, .projnewBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F0F0F0;
+    gap:25px;
+}
+
+.projnewBtn{
+    margin: 25px 0 20px 0;
+}
+
+.projBtn{
+    color: #0A0909;
+    background-color: #F0F0F0;
+    padding: 7px 25px;
+    border: none;
+    border-radius: 13px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.projBtn:hover{
+    background-color: #d8d8d8;
+    box-shadow: 0 0 14px rgba(224, 213, 213, 0.1);
+}
+
+.projnewInput{
+    padding: 10px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 13px;
+    color: #0A0909;
+}
+
+.projnewContent span{
+    font-size: 20px;
+    font-weight: bold;
+}

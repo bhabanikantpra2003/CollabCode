@@ -1,0 +1,1 @@
+// all script.lang file to be added in this dir

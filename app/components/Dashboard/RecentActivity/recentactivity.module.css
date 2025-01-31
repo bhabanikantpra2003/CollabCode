@@ -1,0 +1,83 @@
+.recProjects{
+    padding-bottom: 10px;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff; 
+    width: 90vw;
+    margin: 10px 0;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.project:hover{
+    background: #2d2d2d;
+}
+
+.recProjects span{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project span{
+    font-size: 18px;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+.projectName{
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.projectName:hover{
+    text-decoration: underline;
+}
+
+.updatedAt{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pageButton {
+    background: none;
+    border: none;
+    color: #F0F0F0;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 10px;
+    transition: 0.3s all ease-in-out;
+}
+
+.pageButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pageButton:hover:not(:disabled) {
+    background: #2d2d2d;
+}
+
+.pagination span{
+    font-weight: 500;
+    font-size: 22px;
+}

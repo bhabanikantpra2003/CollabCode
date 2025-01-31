@@ -1,0 +1,50 @@
+.signinBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 195px;
+    height: 60px;
+    border-radius: 18px;
+    background-color: #F0F0F0;
+    color: #000000;
+    margin-right: 20px;
+    font-size: 19px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    transition: 0.3s all ease-in-out;
+}
+
+.signinBtn:hover{
+    transition: 0.3s;
+    box-shadow: 0px 0px 14px 0px #ecdfdf;
+}
+
+.signinBtn span{
+    margin-right: 15px;
+}
+
+.signinBtn img{
+    width: 35px;
+    height: 35px;
+}
+
+
+@media screen and (max-width: 800px){
+    .signinBtn{
+        width: 100%;
+        margin-right: 0;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .signinBtn img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .signinBtn span{
+        margin-right: 10px;
+    }
+}
