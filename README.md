@@ -1,4 +1,4 @@
-# CoDev - Collaborative Code Editor
+# CollabCode 
 
 CoDev is a powerful, real-time collaborative code editor designed for seamless project development. It enables developers to create and manage files, invite team members, and work together in a dynamic coding environment.
 
